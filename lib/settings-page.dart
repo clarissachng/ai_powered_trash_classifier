@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+// import 'package:url_launcher/url_launcher.dart';
 
 void main() {
   runApp(SettingsApp());
@@ -60,9 +61,20 @@ class _SettingsPageState extends State<SettingsPage> {
     });
   }
 
-  void _sendFeedback() {
-    // Implement feedback sending logic here
-    print('Feedback Sent');
+  void _launchGitHubIssues() async {
+    print('Launching GitHub issues...');
+    // const url = 'https://github.com/fw22912/ai_powered_trash_classifier/issues/new';
+    // if (await canLaunch(url)) {
+    //   await launch(url);
+    // } else {
+    //   throw 'Could not launch $url';
+    // }
+    // const url = 'https://github.com/fw22912/ai_powered_trash_classifier/issues/new';
+    // if (await canLaunch(url)) {
+    //   await launch(url);
+    // } else {
+    //   throw 'Could not launch $url';
+    // }
   }
 
   @override
@@ -127,11 +139,9 @@ class _SettingsPageState extends State<SettingsPage> {
               ],
             ),
             const Spacer(),
-            Center(
-              child: ElevatedButton(
-                onPressed: _sendFeedback,
-                child: const Text('SEND FEEDBACK'),
-              ),
+            ElevatedButton(
+              onPressed: _launchGitHubIssues,
+              child: const Text('SEND FEEDBACK'),
             ),
           ],
         ),
