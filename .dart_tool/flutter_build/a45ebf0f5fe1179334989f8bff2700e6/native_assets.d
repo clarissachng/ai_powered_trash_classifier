@@ -1,0 +1,1 @@
+ /Users/clarissachng/Desktop/Bristol/Competition:\ Hackathons/ai_powered_trash_classifier/.dart_tool/flutter_build/a45ebf0f5fe1179334989f8bff2700e6/native_assets.yaml: 
